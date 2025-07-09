@@ -1,0 +1,37 @@
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(rgba(28, 28, 27, 0.7), rgba(22, 22, 22, 0.7)), 
+    url('../../components/gallery/beautiful-couple-showing-affection-beach-near-ocean.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    text-align: center;
+    max-width: 800px;
+}
+.hero-text h2{
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    /* padding-top: 10px;
+    padding-left: 120px;
+    text-align: center; */
+}
+.hero-text p{
+   max-width: 700px;
+   margin: 10px auto ;
+   line-height: 1.4px;
+   font-size: 25px;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
