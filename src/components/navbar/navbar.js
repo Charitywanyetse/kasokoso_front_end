@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import './navbar.css'
+import './Navbar.css'
+import { Link } from 'react-router-dom';
 import logo from '../../components/gallery/kasokoso logo.png';
 
 
@@ -17,14 +18,17 @@ const Navbar = () => {
   return (
     <nav className={`container $ {sticky? 'dark-nav' : ''}`}>
      <img src={logo} alt="Kasokoso Logo" className="logo" />
-     <ul>
-        <li>Home</li>
-        <li>About us</li>
-        <li>Services</li>
-        <li>Contact us</li>
-        <li>Gallery</li>
-     </ul>
+     
+      <ul>
+       <li><Link to="/">Home</Link></li>
+       <li><Link to="/aboutus">About Us</Link></li>
+       <li><Link to="/services">Services</Link></li>
+       <li><Link to="/contactus">Contact Us</Link></li>
+       <li><Link to="/gallery">Gallery</Link></li>
+      </ul>
     </nav>
+
+    
   )
 }
 
